@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JoJo's Bizarre Adventure Wiki</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="text.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <script src="navbar-drawer.js" defer></script>
+    <script src="part-transition.js" defer></script>
+    <script src="release-countdown.js" defer></script>
+    <script src="history-progress.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar wiki-nav">
+      <div class="container-fluid">
+        <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <a class="navbar-brand ms-auto" href="home.html">JJBA Wiki</a>
+        <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+          <div class="drawer-header">
+            <h2 class="drawer-title" id="navbarDrawerLabel">JJBA Wiki</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+          </div>
+          <div class="drawer-body">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item dropdown">
+              <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Parts</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="part_1.html">Part 1: Phantom Blood</a></li>
+                <li><a class="dropdown-item" href="part_2.html">Part 2: Battle Tendency</a></li>
+                <li><a class="dropdown-item" href="part_3.html">Part 3: Stardust Crusaders</a></li>
+                <li><a class="dropdown-item" href="part_4.html">Part 4: Diamond Is Unbreakable</a></li>
+                <li><a class="dropdown-item" href="part_5.html">Part 5: Golden Wind</a></li>
+                <li><a class="dropdown-item" href="part_6.html">Part 6: Stone Ocean</a></li>
+                <li><a class="dropdown-item" href="part_7.html">Part 7: Steel Ball Run</a></li>
+                <li><a class="dropdown-item" href="part_8.html">Part 8: JoJolion</a></li>
+                <li><a class="dropdown-item" href="part_9.html">Part 9: The JOJOLands</a></li>
+              </ul>
+            </li>
+          </ul>
+          </div>
+        </dialog>
+      </div>
+    </nav>
+
+    <main class="container py-4 py-md-5">
+      <section class="release-countdown text-center p-4 p-md-5 mb-4" aria-labelledby="release-countdown-title" data-pop-on-read>
+        <p class="eyebrow mb-2">Weekly Netflix release</p>
+        <h2 class="section-title" id="release-countdown-title">Next Steel Ball Run episode</h2>
+        <div class="countdown-clock" id="release-countdown" role="timer" aria-label="Countdown to the next Steel Ball Run episode">
+          <div class="countdown-unit"><span class="countdown-value" id="countdown-days">--</span><span class="countdown-label">days</span></div>
+          <div class="countdown-unit"><span class="countdown-value" id="countdown-hours">--</span><span class="countdown-label">hours</span></div>
+          <div class="countdown-unit"><span class="countdown-value" id="countdown-minutes">--</span><span class="countdown-label">minutes</span></div>
+          <div class="countdown-unit"><span class="countdown-value" id="countdown-seconds">--</span><span class="countdown-label">seconds</span></div>
+        </div>
+        <p class="countdown-date mb-2" id="countdown-date"></p>
+        <p class="countdown-note mb-0">Episodes are scheduled weekly on Fridays. Countdown estimates Netflix's standard 12:00 a.m. Pacific release time; availability may vary by region.</p>
+      </section>
+
+      <header class="wiki-panel text-center p-4 p-md-5 mb-4" data-pop-on-read>
+        <p class="eyebrow mb-2">A fan-made guide</p>
+        <h1 class="title mb-3">JoJo's Bizarre Adventure</h1>
+        <p class="lead mb-0">One family, generations of adventure, and a world of strange powers.</p>
+      </header>
+
+      <section class="wiki-panel p-4 p-md-5 mb-4" aria-labelledby="overview-title" data-pop-on-read>
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-8">
+            <h2 class="section-title" id="overview-title">What is JoJo's Bizarre Adventure?</h2>
+            <p>JoJo's Bizarre Adventure is a long-running manga series written and illustrated by Hirohiko Araki. It follows members of the Joestar family across different eras, with each story bringing a new lead character, setting, and challenge.</p>
+            <p class="mb-0">The series mixes action, supernatural abilities, dramatic rivalries, and distinctive fashion. Its stories can be enjoyed as separate adventures, while family connections and recurring ideas link them together.</p>
+          </div>
+          <aside class="col-lg-4" aria-label="Series facts">
+            <h3 class="facts-title">At a glance</h3>
+            <dl class="row mb-0">
+              <dt class="col-5">Creator</dt>
+              <dd class="col-7">Hirohiko Araki</dd>
+              <dt class="col-5">First published</dt>
+              <dd class="col-7">1987</dd>
+              <dt class="col-5">Parts</dt>
+              <dd class="col-7">Nine main stories</dd>
+              <dt class="col-5">Genres</dt>
+              <dd class="col-7">Action, adventure, fantasy</dd>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <section id="parts" aria-labelledby="parts-title" data-pop-on-read>
+        <div class="wiki-panel p-4 p-md-5">
+          <h2 class="section-title" id="parts-title">The story parts</h2>
+          <p>Each part introduces a new JoJo and a different chapter in the family's story.</p>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3">
+            <div class="col"><a class="part-link" href="part_1.html?intro=1"><article class="part-card h-100" data-part="1"><h3>Part 1: Phantom Blood</h3><p class="mb-0">In Victorian England, Jonathan Joestar faces his adopted brother, Dio Brando.</p></article></a></div>
+            <div class="col"><a class="part-link" href="part_2.html?intro=1"><article class="part-card h-100" data-part="2"><h3>Part 2: Battle Tendency</h3><p class="mb-0">Joseph Joestar confronts ancient beings in a fast-moving adventure across the world.</p></article></a></div>
+            <div class="col"><a class="part-link" href="part_3.html?intro=1"><article class="part-card h-100" data-part="3"><h3>Part 3: Stardust Crusaders</h3><p class="mb-0">Jotaro Kujo and his companions travel toward Egypt to face a returning enemy.</p></article></a></div>
+            <div class="col"><a class="part-link" href="part_4.html?intro=1"><article class="part-card h-100" data-part="4"><h3>Part 4: Diamond Is Unbreakable</h3><p class="mb-0">Josuke Higashikata protects his quiet hometown from a hidden threat.</p></article></a></div>
+            <div class="col"><a class="part-link" href="part_5.html?intro=1"><article class="part-card h-100" data-part="5"><h3>Part 5: Golden Wind</h3><p class="mb-0">Giorno Giovanna joins a criminal organization in hopes of changing it from within.</p></article></a></div>
+            <div class="col"><a class="part-link" href="part_6.html?intro=1"><article class="part-card h-100" data-part="6"><h3>Part 6: Stone Ocean</h3><p class="mb-0">Jolyne Cujoh fights for her freedom and uncovers a plan with far-reaching stakes.</p></article></a></div>
+            <div class="col"><a class="part-link" href="part_7.html?intro=1"><article class="part-card h-100" data-part="7"><h3>Part 7: Steel Ball Run</h3><p class="mb-0">Johnny Joestar and Gyro Zeppeli enter a cross-country race in an alternate America.</p></article></a></div>
+            <div class="col"><a class="part-link" href="part_8.html?intro=1"><article class="part-card h-100" data-part="8"><h3>Part 8: JoJolion</h3><p class="mb-0">In the town of Morioh, a young man searches for his identity and past.</p></article></a></div>
+            <div class="col"><a class="part-link" href="part_9.html?intro=1"><article class="part-card h-100" data-part="9"><h3>Part 9: The JOJOLands</h3><p class="mb-0">Jodio Joestar sets out to become wealthy in the islands of Hawaii.</p></article></a></div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <section class="container pb-4" aria-labelledby="history-title" data-progress-section>
+      <div class="wiki-panel history-section p-4 p-md-5">
+        <h2 class="section-title" id="history-title">Series history</h2>
+        <p>A few milestones in the JoJo's Bizarre Adventure franchise.</p>
+        <ol class="history-timeline list-unstyled mb-0">
+          <li>
+            <h3 class="history-year">1987</h3>
+            <p class="mb-0">The manga begins serialization in <em>Weekly Shonen Jump</em>, introducing the Joestar family saga. Its changing cast and settings establish the generational structure that defines the series.</p>
+          </li>
+          <li>
+            <h3 class="history-year">1993</h3>
+            <p class="mb-0">The first <em>Stardust Crusaders</em> original video animation episodes are released, bringing the Joestar adventure to animation for the first time.</p>
+          </li>
+          <li>
+            <h3 class="history-year">2000</h3>
+            <p class="mb-0">Additional <em>Stardust Crusaders</em> OVA episodes continue the adaptation through the Crusaders' journey and their final confrontation.</p>
+          </li>
+          <li>
+            <h3 class="history-year">2007</h3>
+            <p class="mb-0">A theatrical animated adaptation of <em>Phantom Blood</em> is released in Japan, revisiting Jonathan and Dio's story.</p>
+          </li>
+          <li>
+            <h3 class="history-year">2012</h3>
+            <p class="mb-0">The television anime premieres, adapting <em>Phantom Blood</em> and <em>Battle Tendency</em> and introducing the series to a new generation of viewers.</p>
+          </li>
+          <li>
+            <h3 class="history-year">2014</h3>
+            <p class="mb-0">The television adaptation returns with <em>Stardust Crusaders</em>, following Jotaro and his companions on their journey to Egypt.</p>
+          </li>
+          <li>
+            <h3 class="history-year">2016</h3>
+            <p class="mb-0"><em>Diamond Is Unbreakable</em> receives its television anime adaptation, bringing Josuke's story in Morioh to the screen.</p>
+          </li>
+          <li>
+            <h3 class="history-year">2018</h3>
+            <p class="mb-0">The anime adaptation of <em>Golden Wind</em> begins, following Giorno Giovanna's rise through the Italian underworld.</p>
+          </li>
+          <li>
+            <h3 class="history-year">2021</h3>
+            <p class="mb-0"><em>Stone Ocean</em> begins its anime adaptation, bringing Jolyne Cujoh's story to audiences around the world.</p>
+          </li>
+          <li>
+            <h3 class="history-year">2023</h3>
+            <p class="mb-0">The ninth manga part, <em>The JOJOLands</em>, begins serialization and continues the Joestar story in Hawaii.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="container pb-4" aria-labelledby="real-world-events-title" data-progress-section>
+      <div class="wiki-panel history-section p-4 p-md-5">
+        <h2 class="section-title" id="real-world-events-title">JOJO IRL pop-ups</h2>
+        <p>Official exhibitions and pop-up events where fans can experience JoJo in person. Check each event's official page for the latest schedule.</p>
+        <ol class="list-unstyled mb-0">
+          <li>
+            <h3 class="history-year">2026 · United States</h3>
+            <p class="mb-2"><em>JOJOCARAVAN America</em> brings a JoJo event to Kinokuniya USA locations nationwide.</p>
+            <a class="btn home-button btn-sm" href="https://jojo-portal.com/en/" target="_blank" rel="noopener noreferrer">Official JoJo Portal</a>
+          </li>
+          <li>
+            <h3 class="history-year">September 2–16, 2026 · Tokyo, Japan</h3>
+            <p class="mb-2">The first stage of <em>JOJOCARAVAN 2</em> brought its <em>Steel Ball Run</em> original-art and anime exhibition to Shibuya.</p>
+            <a class="btn home-button btn-sm" href="https://jojocaravan.com/information" target="_blank" rel="noopener noreferrer">Official event information</a>
+          </li>
+          <li>
+            <h3 class="history-year">November 13–16, 2026 · Kyoto, Japan</h3>
+            <p class="mb-2">The second stage is hosted at Aeon Mall Kyoto Katsuragawa, with original-art displays and a goods area.</p>
+            <a class="btn home-button btn-sm" href="https://jojocaravan.com/" target="_blank" rel="noopener noreferrer">Official event schedule</a>
+          </li>
+          <li>
+            <h3 class="history-year">December 4–7, 2026 · Osaka, Japan</h3>
+            <p class="mb-2">The third <em>JOJOCARAVAN 2</em> stage is scheduled to continue the exhibition in Osaka.</p>
+            <a class="btn home-button btn-sm" href="https://jojocaravan.com/" target="_blank" rel="noopener noreferrer">Official event schedule</a>
+          </li>
+          <li>
+            <h3 class="history-year">December 25–28, 2026 · Hyogo, Japan</h3>
+            <p class="mb-2">A <em>JOJOCARAVAN 2</em> pop-up store is scheduled for Hyogo.</p>
+            <a class="btn home-button btn-sm" href="https://jojocaravan.com/" target="_blank" rel="noopener noreferrer">Official event schedule</a>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <footer class="container pb-4 text-center">
+      <p class="wiki-panel footer-note p-3 mb-0">A student-made fan wiki. JoJo's Bizarre Adventure was created by Hirohiko Araki.</p>
+    </footer>
+  </body>
+</html>
